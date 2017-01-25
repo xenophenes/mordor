@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+@import url("http://fonts.googleapis.com/css?family=Raleway:300,700");
 
 /*
 	Theory by TEMPLATED
@@ -1585,11 +1585,12 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #9a9a9a;
+		color: #2D2D2A;
 		font-family: "Raleway", Arial, Helvetica, sans-serif;
-		font-size: 13pt;
+		font-size: 14pt;
 		font-weight: 300;
-		line-height: 1.65;
+		letter-spacing: 0.09em;
+		line-height: 1.65em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1928,6 +1929,11 @@
 			width: 21%;
 		}
 
+		.flex.flex-3 .box {
+			width: 21%;
+			margin: auto;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			.flex.flex-2 article {
@@ -2198,11 +2204,17 @@
 
 		.box.person {
 			border: solid 1px rgba(255, 255, 255, 0.25);
-			padding: 3em 1.5em;
+			padding: 1em;
 		}
 
 			.box.person h3 {
 				margin: 0;
+				font-size: 1.2em;
+			}
+
+			.box.person p {
+				margin: 0;
+				font-size: .8em;
 			}
 
 			.box.person .image {
@@ -2210,7 +2222,8 @@
 			}
 
 				.box.person .image img {
-					max-width: 100%;
+					max-width: 80%;
+					margin: auto;
 				}
 
 /* Icon */
@@ -2258,6 +2271,7 @@
 
 		.image.round img {
 			border-radius: 100%;
+			border: 3px solid #1D3461;
 		}
 
 		.image.left {
@@ -2669,7 +2683,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #6692c8;
+				background-color: #FE7F2D;
 			}
 
 			input[type="submit"].special:active,
@@ -2724,14 +2738,14 @@
 		}
 
 	#header {
-		color: #d4e0ef;
+		background-color: #FE7F2D;
+		color: #fff;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
 		line-height: 3.25em;
-		position: absolute;
+		position: relative;
 		text-align: right;
-		top: 4em;
 		width: 100%;
 		z-index: 10001;
 	}
@@ -2742,7 +2756,7 @@
 		}
 
 		#header .logo {
-			color: #ffffff;
+			color: #fff;
 			display: inline-block;
 			font-weight: 600;
 			height: inherit;
@@ -2761,6 +2775,7 @@
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
 			display: inline-block;
+			font-weight: 600;
 			padding: 0 0.75em;
 			color: inherit;
 			text-decoration: none;
@@ -2768,7 +2783,7 @@
 		}
 
 			#header a:hover {
-				color: #ffffff;
+				color: #2D2D2A;
 			}
 
 			#header a:last-child {
@@ -2933,19 +2948,19 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 10em 0;
+		padding: 10em 0 8em 0;
 		background-image: url('../../images/banner.jpg');
-		background-size: cover;
+		background-size: contain;
 		background-position: top;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
-		border-top: 0.5em solid #5385c1;
+		border-top: 1em solid #5385c1;
 	}
 
 		#banner h1 {
-			font-size: 3.5em;
-			font-weight: 100;
+			font-size: 3em;
+			font-weight: 600;
 			color: #fff;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
