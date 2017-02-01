@@ -1676,6 +1676,16 @@
 		font-size: 1.35em;
 	}
 
+	h3.top1 {
+		border-top: 10px solid #FE7F2D;
+		padding: 1em 0 0 0;
+	}
+
+	h3.top2 {
+		border-top: 10px solid #5385c1;
+		padding: 1em 0 0 0;
+	}
+
 	h4 {
 		font-size: 1.1em;
 	}
@@ -2537,6 +2547,7 @@
 				border: solid 1px #dbdbdb;
 				border-left-width: 0;
 				border-top-width: 0;
+				font-size: small;
 			}
 
 				table.alt tbody tr td:first-child {
