@@ -1846,6 +1846,10 @@
 
 		}
 
+		section.wrapper.style3 {
+			border-top: 3em solid #FE7F2D;
+		}
+
 		@media screen and (max-width: 480px) {
 
 			section.wrapper, article.wrapper {
